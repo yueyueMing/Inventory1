@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/payDat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="日期"
+
+        />
+
+    <TextView
+        android:id="@+id/payState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="支付类型"
+
+        />
+
+    <TextView
+        android:id="@+id/paySeller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="销售员"
+
+        />
+
+    <TextView
+        android:id="@+id/paySum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="销售总额"
+
+        />
+
+    <TextView
+        android:id="@+id/payCac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="实收合计"
+        android:gravity="right"
+        />
+
+</LinearLayout>

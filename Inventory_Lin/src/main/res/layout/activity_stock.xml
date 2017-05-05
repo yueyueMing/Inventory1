@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="起始日期"
+            android:textColor="#000" />
+
+        <drawthink.com.inventory.widget.DrawableRightCenterTextView
+            android:id="@+id/et_startdatatime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/tab_riqi_icon"
+            android:text="请选择开始时间"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/lab_input_bj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终止如期"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <drawthink.com.inventory.widget.DrawableRightCenterTextView
+            android:id="@+id/et_enddatatime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/tab_riqi_icon"
+            android:text="请选择结束时间"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/lab_input_bj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_stockName"
+            style="@style/EditStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:lines="1"
+            />
+
+
+        <ImageView
+            android:id="@+id/ib_stock_search"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bt_select"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_stock"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        >
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="起始日期"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <drawthink.com.inventory.widget.DrawableRightCenterTextView
+            android:id="@+id/tv_start_data"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/tab_riqi_icon"
+            android:gravity="center"
+            android:text="请选择开始时间"
+            android:drawablePadding="10dp"
+            android:background="@drawable/lab_input_bj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终止如期"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <drawthink.com.inventory.widget.DrawableRightCenterTextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/tab_riqi_icon"
+            android:gravity="center"
+            android:text="请选择结束时间"
+            android:drawablePadding="10dp"
+            android:background="@drawable/lab_input_bj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售员"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_seller"
+            style="@style/SpannerStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/lab_input_bj"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付类型"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_pay_state"
+            style="@style/SpannerStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:entries="@array/item_pay"
+            android:textColor="#000"
+            android:background="@drawable/lab_input_bj"/>
+
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bt_select"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/tab_tianjia_btn"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_recode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:layout_margin="10dp"
+        android:background="@android:color/white">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款合计："
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/allMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="#f90"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入合计："
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/getAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#2dcc70"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

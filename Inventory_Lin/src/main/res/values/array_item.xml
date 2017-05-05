@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_pay">
+        <item>收入</item>
+        <item>退款</item>
+    </string-array>
+    <string-array name="payType">
+        <item>全部</item>
+        <item>微信</item>
+        <item>现金</item>
+    </string-array>
+</resources>

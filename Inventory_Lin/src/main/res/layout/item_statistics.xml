@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/sellDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="销售日期" />
+    <TextView
+        android:id="@+id/sellName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        tools:text="销售名称" />
+
+    <TextView
+        android:id="@+id/sellId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="订单编号"
+
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="单价"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/sellNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="数量"
+
+        />
+    <TextView
+        android:id="@+id/sellColor"
+      android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="颜色"
+        />
+    <TextView
+        android:id="@+id/sellXi"
+      android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="型号"
+        />
+    <TextView
+        android:id="@+id/sellSeller"
+      android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="销售员"
+        />
+    <TextView
+        android:id="@+id/sellSum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="销售总额"
+       />
+
+
+</LinearLayout>
